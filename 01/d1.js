@@ -1,6 +1,6 @@
-const { input } = require("./input");
+const getInput = require("../getInput");
 
-const sortedCaloriesSum = input
+const sortedCaloriesSum = getInput("./input.txt")
   .split("\n\n")
   .map(elf => {
     return elf
